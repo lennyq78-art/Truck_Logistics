@@ -5,8 +5,8 @@
 /// 2. Testing on Physical Android Phone: Change to your laptop's local IP (e.g., 'http://192.168.1.15:8000').
 /// 3. Testing on Windows / Desktop / Web: Use 'http://localhost:8000'.
 class ApiConfig {
-  // Configured for your laptop IP address on local network: 192.168.53.8
-  static const String baseUrl = 'http://192.168.53.8:8000';
+  // Production Hugging Face Space URL (Works on 4G/5G mobile data 24/7!)
+  static const String baseUrl = 'https://lennyq78-art-truck-logistics.hf.space';
   
   // Timeout for network requests
   static const Duration timeoutDuration = Duration(seconds: 10);
