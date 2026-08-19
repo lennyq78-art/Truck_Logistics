@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: truck-logistics-backend
+    env: docker
+    plan: free
+    region: singapore
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: PORT
+        value: 8000
