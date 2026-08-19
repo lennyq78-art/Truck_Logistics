@@ -1,3 +1,13 @@
+---
+title: Truck Logistics System
+emoji: 🚛
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Truck Trip Logging System - FastAPI Backend
 
 A lightweight, high-performance Python FastAPI backend for tracking fleet trucks, logging active trips, and automatically calculating trip fares in Sri Lankan Rupees (LKR).

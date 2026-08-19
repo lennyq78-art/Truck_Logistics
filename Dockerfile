@@ -6,7 +6,7 @@ WORKDIR /app
 # Prevent Python from writing .pyc files & enable unbuffered stdout/stderr logging
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    PORT=8000
+    PORT=7860
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -24,8 +24,8 @@ COPY . .
 # Run database seed script
 RUN python seed.py
 
-# Expose port
-EXPOSE 8000
+# Expose port 7860 for Hugging Face Spaces
+EXPOSE 7860
 
 # Start Uvicorn server dynamically binding to $PORT assigned by cloud provider
-CMD exec uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
+CMD exec uvicorn main:app --host 0.0.0.0 --port ${PORT:-7860}
